@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            padding: 15px;
+            margin-top: 30px;
+            border: 10px solid black;
+            background-color: skyblue;
+            font-size: 10px;
+            display: inline-block;
+            margin: 25px;
+        }
+        .main label.input{
+            margin: 4px;
+            padding: 4px;
+
+        }
+        .main h1{
+            font-size: italic;
+            font-size: 30px;
+            font-weight: bold;
+            color: blue;
+        }
+        .main button{
+            background-color: slateblue;
+            color: aqua;
+            border-radius: 5px 5px 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="main">
+            <h1>REGiSTRATION FORM></h1>
+            <label>Name</label>
+            <input type="text"id="na" placeholder="Enter Your Name">
+            <br>
+            <label>Phone</label>
+            <input type="Number"id="ph" placeholder="Enter Your Phone">
+            <br>
+            <label>Email</label>
+            <input type="Email"id="em" placeholder="Enter Your Email">
+            <br>
+            <label>Password</label>
+            <input type="Password"id="pa" placeholder="Enter Your Password">
+            <br>
+            <label>Country</label>
+            <input type="Country"id="co" placeholder="Enter Your Country">
+            <br>
+            <label>City</label>
+            <input type="City"id="ci" placeholder="Enter Your City">
+            <br>       
+        <button onclick="LOGIN()">Insert Data</button>
+        <h1 id="result-name"></h1>
+        <h1 id="result-Phone"></h1>
+        <h1 id="result-email"></h1>
+        <h1 id="result-password"></h1>
+        <h1 id="result-country"></h1>
+        <h1 id="result-city"></h1>
+    </div>
+    </center>
+</body>
+<script>
+    function LOGIN(){
+        var name = document.getElementById("na").value;
+        var Phone = document.getElementById("ph").value;
+        var Email = document.getElementById("em").value;
+        var Password = document.getElementById("pa").value;
+        var Country = document.getElementById("co").value;
+        var City = document.getElementById("ci").value;
+        document.getElementById("result-name").innerHTML=name;
+        document.getElementById("result-Phone").innerHTML=Phone;
+        document.getElementById("result-email").innerHTML=Email;
+        document.getElementById("result-password").innerHTML=Password;
+        document.getElementById("result-country").innerHTML=Country;
+        document.getElementById("result-city").innerHTML=City;
+    }
+</script>
+</html>
